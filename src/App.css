@@ -1,0 +1,171 @@
+.App {
+  /* text-align: center; */
+  /* height:100vh;
+  width:100%;
+
+  border:1px solid white;
+  display:flex;
+  justify-content:space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
+
+}
+.mainconteiner{
+  height:100vh;
+  width:100%;
+
+  border:1px solid white;
+  display:flex;
+  justify-content:space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sidebar{
+  height:100%;
+  width:17%;
+  border:1px solid white;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.container{
+  height:100%;
+  width:80%;
+  border:1px solid whiteblue
+
+}
+.uppernav{
+  height:16%;
+  width:100%;
+  border:1px solid white;
+  display:flex
+}
+.maincontainer1{
+  height:84%;
+  width:100%;
+  border:1px solid white;
+  border-radius:10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+.searchbardiv{
+  height:100%;
+  width:50%;
+  border:1px solid white;
+ 
+}
+.userdiv{
+  height:100%;
+  width:50%;
+  border:1px solid white
+}
+.flex-container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%; /* Optional: Adjust the height based on your design */
+}
+.user-container{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%; /* Optional: Adjust the height based on your design */
+  justify-content:right;
+  gap:20px
+}
+input{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.calanderdiv{
+  width:100%;
+  border:1px solid white;
+  display:flex
+}
+.screen{
+  width:75%;
+  border:1px solid white;
+  height:100%
+}
+.calander{
+  width:25%;
+  border:1px solid white;
+  height:100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.event{
+  display:flex
+}
+
+/* App.css */
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .uppernav {
+    flex-direction: column;
+  }
+
+  /* Add more responsive styles as needed */
+}
+
+/* Your existing styles */
+/* ... */
+@media (max-width: 480px) {
+  .sidebar {
+    display: none; /* Hide the sidebar on smaller screens */
+  }
+
+  .calanderdiv {
+    flex-direction: column; /* Stack calendar on top of events for better mobile view */
+  }
+
+  .event-container {
+    flex-direction: column; /* Stack events on top of each other for better mobile view */
+  }
+
+  .button-container {
+    flex-direction: column; /* Stack buttons on top of each other for better mobile view */
+  }
+
+  /* Add more responsive styles as needed */
+}
+
+
