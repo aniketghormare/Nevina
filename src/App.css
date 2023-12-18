@@ -7,16 +7,17 @@
   display:flex;
   justify-content:space-between;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
-font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
-.mainconteiner{
-  height:auto;
-  width:100%;
 
-  border:1px solid white;
-  display:flex;
-  justify-content:space-between;
-  
+.mainconteiner {
+  height: auto;
+  width: 100%;
+
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
@@ -24,6 +25,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif
   height: 40vmin;
   pointer-events: none;
 }
+
 /* 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -55,85 +57,101 @@ font-family:Verdana, Geneva, Tahoma, sans-serif
   }
 } */
 
-.sidebar{
-  height:auto;
-  width:17%;
-  border:1px solid white;
+.sidebar {
+  height: auto;
+  width: 17%;
+  border: 1px solid white;
   border-radius: 0px 10px 10px 0px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
-.container{
-  height:100%;
-  width:80%;
-  border:1px solid whiteblue;
-  padding:20px;
+
+.container {
+  height: 100%;
+  width: 80%;
+  border: 1px solid whiteblue;
+  padding: 20px;
 
 }
-.uppernav{
-  height:16%;
-  width:100%;
-  border:1px solid white;
-  display:flex
+
+.uppernav {
+  height: 16%;
+  width: 100%;
+  border: 1px solid white;
+  display: flex
 }
-.maincontainer1{
-  height:84%;
-  width:100%;
-  border:1px solid white;
-  border-radius:10px;
+
+.maincontainer1 {
+  height: 84%;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
-.searchbardiv{
-  height:100%;
-  width:50%;
-  border:1px solid white;
- 
+
+.searchbardiv {
+  height: 100%;
+  width: 50%;
+  border: 1px solid white;
+
 }
-.userdiv{
-  height:100%;
-  width:50%;
-  border:1px solid white
+
+.userdiv {
+  height: 100%;
+  width: 50%;
+  border: 1px solid white
 }
+
 .flex-container {
   display: flex;
   /* justify-content: center; */
   align-items: center;
-  height: 100%; /* Optional: Adjust the height based on your design */
+  height: 100%;
+  /* Optional: Adjust the height based on your design */
 }
-.user-container{
+
+.user-container {
   display: flex;
   /* justify-content: center; */
   align-items: center;
-  height: 100%; /* Optional: Adjust the height based on your design */
-  justify-content:right;
-  gap:20px
+  height: 100%;
+  /* Optional: Adjust the height based on your design */
+  justify-content: right;
+  gap: 20px
 }
-input{
+
+input {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.calanderdiv{
-  width:100%;
-  border:1px solid white;
-  display:flex
+.calanderdiv {
+  width: 100%;
+  border: 1px solid white;
+  display: flex
 }
-.screen{
-  width:75%;
-  border:1px solid white;
-  height:100%
+
+.screen {
+  width: 75%;
+  border: 1px solid white;
+  height: 100%
 }
-.calander{
-  height:100%;
-  width:25%;
-  border:1px solid white;
-  height:100%;
-  padding:10px;
+
+.calander {
+  height: 100%;
+  width: 25%;
+  border: 1px solid white;
+  height: 100%;
+  padding: 10px;
   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
 }
-.event{
-  display:flex;
-  justify-content:space-between
+
+.event {
+  display: flex;
+  justify-content: space-between
+}
+.cross{
+  display:none
 }
 
 /* App.css */
@@ -153,7 +171,7 @@ input{
 
 /* Your existing styles */
 /* ... */
- /* @media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .sidebar {
     display: none; 
   }
@@ -172,45 +190,216 @@ input{
 
    Add more responsive styles as needed 
 } */
-.buttondiv{
-  border:1px solid white;
-  display:flex;
-  justify-content:space-evenly;
-  padding:7px
-}
-.buttondiv *{
-  padding:12px;
-  border-radius:12px;
-  background-color:#edbf1c;
-  color:white;
-  border-color:#edbf1c
-}
-button:hover{
-   font-size:large
-}
-@media only screen and (max-width: 1072px) {
-  .calanderdiv{
-    flex-direction:column
-  }
-  .screen{
-    width:100%
-  }
-  .calander{
-    display:flex;
-    width:100%
-  }
-  .musicdiv{
-
-    border:1px solid white;
-     padding:20px;
-     width:50%
-  }
-  .buttondiv{
-    border:1px solid white;
-    display:flex;
-    justify-content:space-evenly
-  }
-
- 
+.buttondiv {
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 7px
 }
 
+.buttondiv * {
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #edbf1c;
+  color: white;
+  border-color: #edbf1c
+}
+
+button:hover {
+  font-size: large
+}
+
+.sidebar * {
+  font-size: large
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 1072px) {
+
+.sidebar{
+  width:25%;
+  
+}
+.container{
+  width:75%
+}
+  * {
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+
+  .calanderdiv {
+    flex-direction: column;
+  }
+
+  .screen {
+    width: 100%;
+  }
+
+  .calander {
+    display: flex;
+    width: 100%;
+  }
+
+  .musicdiv {
+    border: 1px solid white;
+    padding: 20px;
+    width: 50%;
+  }
+
+  .buttondiv {
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: auto;
+    width: 84%;
+
+  }
+  
+  .cross{
+    display:block;
+    margin-top:10px;
+    margin-left:10px
+  }
+
+
+  .user-container {
+    justify-content: space-between
+  }
+
+  .fc-header-toolbar {
+    padding: 8px;
+  }
+
+  .fc-header-toolbar button {
+    font-size: 10px;
+    padding: 2px 4px;
+    background-color: red
+  }
+
+  .uppernav {
+    flex-direction: column;
+  }
+
+  * {
+    font-size: medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+
+  /* .sidebar {
+    
+    margin-left:-170px
+  } */
+  /* .sidebar {
+    display:none
+  } */
+  
+ .sidebar{
+  display:none
+ }
+
+  .calanderdiv {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .screen {
+    width: 100%;
+  }
+
+  .calander {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .calander1 {
+    width: 95%;
+    border: 1px solid white;
+  }
+
+  .musicdiv {
+    border: 1px solid white;
+    width: 88%;
+  }
+
+  .buttondiv {
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+
+
+/* @media only screen and (max-width: 1072px) {
+  .calanderdiv {
+    flex-direction: column;
+  }
+
+  .screen {
+    width: 100%;
+  }
+
+  .calander {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .calander1 {
+    width: 95%;
+    border: 1px solid red;
+  }
+
+  .musicdiv {
+    border: 1px solid red;
+    width: 88%;
+  }
+
+  .buttondiv {
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .calanderdiv {
+    flex-direction: column;
+  }
+
+  .screen {
+    width: 100%;
+  }
+
+  .calander {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .calander1 {
+    width: 95%;
+    border: 1px solid red;
+  }
+
+  .musicdiv {
+    border: 1px solid red;
+    width: 88%;
+  }
+
+  .buttondiv {
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+  }
+} */

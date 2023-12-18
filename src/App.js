@@ -8,88 +8,97 @@ import { MdOutlineLibraryMusic } from "react-icons/md";
 import { IoHomeOutline } from "react-icons/io5";
 import { IoCloudUploadOutline } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 function App() {
   const [show, setshow] = useState(false);
   const [show2, setshow2] = useState(false);
+  const [dis, setdis] = useState(true);
+  
+ 
   return (
     <div className="App">
       <div className="mainconteiner">
-        <div className="sidebar">
-          <div
-            style={{
-              height: "auto",
-              width: "90%",
-              border: "1px solid white",
-
-              margin: "auto",
-              marginTop: "90px",
-            }}
-          >
-            <p style={{ marginLeft: "10px", color: "#ed7d15" }}>
-              <IoHomeOutline /> Home
-            </p>
-
+        {/* <div className="cross" onClick={handleclick}>
+          <ImCross />
+        </div> */}
+        {dis && (
+          <div className="sidebar">
             <div
               style={{
-                display: "flex",
-                justifyContent: "space-between",
-                height: "40px",
+                height: "auto",
                 width: "90%",
                 border: "1px solid white",
-                padding: "4px",
+
                 margin: "auto",
+                marginTop: "90px",
               }}
-              onClick={() => setshow(!show)}
             >
-              <p>
-                <MdOutlineLibraryMusic /> library
+              <p style={{ marginLeft: "10px", color: "#ed7d15" }}>
+                <IoHomeOutline /> Home
               </p>
-              <p>
-                {" "}
-                <FaAngleDown />
-              </p>
-            </div>
-            {show && (
-              <div style={{ marginLeft: "20px" }}>
+
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  height: "40px",
+                  width: "90%",
+                  border: "1px solid white",
+                  padding: "4px",
+                  margin: "auto",
+                }}
+                onClick={() => setshow(!show)}
+              >
                 <p>
-                  <IoCloudUploadOutline /> Syncs
+                  <MdOutlineLibraryMusic /> library
                 </p>
                 <p>
-                  <IoCloudUploadOutline /> Uploads
+                  {" "}
+                  <FaAngleDown />
                 </p>
               </div>
-            )}
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                height: "40px",
-                width: "90%",
-                border: "1px solid white",
-                padding: "4px",
-                margin: "auto",
-              }}
-              onClick={() => setshow2(!show2)}
-            >
-              <p>
-                <MdOutlineLibraryMusic /> Collections
-              </p>
-              <p>
-                <FaAngleDown />
-              </p>
-            </div>
-            {show2 && (
-              <div style={{ marginLeft: "20px" }}>
+              {show && (
+                <div style={{ marginLeft: "20px" }}>
+                  <p>
+                    <IoCloudUploadOutline /> Syncs
+                  </p>
+                  <p>
+                    <IoCloudUploadOutline /> Uploads
+                  </p>
+                </div>
+              )}
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  height: "40px",
+                  width: "90%",
+                  border: "1px solid white",
+                  padding: "4px",
+                  margin: "auto",
+                }}
+                onClick={() => setshow2(!show2)}
+              >
                 <p>
-                  <IoCloudUploadOutline /> Tracks
+                  <MdOutlineLibraryMusic /> library
                 </p>
                 <p>
-                  <IoCloudUploadOutline /> Playlists
+                  <FaAngleDown />
                 </p>
               </div>
-            )}
+              {show2 && (
+                <div style={{ marginLeft: "20px" }}>
+                  <p>
+                    <IoCloudUploadOutline /> Tracks
+                  </p>
+                  <p>
+                    <IoCloudUploadOutline /> Playlists
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
-        </div>
+        )}
         <div className="container">
           <div className="uppernav">
             <div className="searchbardiv">
@@ -118,7 +127,9 @@ function App() {
                 <Rocket />
               </div>
               <div className="calander">
-                <Calender />
+                <div className="calander1">
+                  <Calender />
+                </div>
 
                 {/* <div className="event-container">
                   <div className="event">
