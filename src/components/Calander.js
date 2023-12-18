@@ -4,7 +4,7 @@ import "./Calander.css"
 function Calender() {
   const [value, onChange] = useState(new Date());
   return (
-    <div>
+    <div >
       <Calendar onChange={onChange} value={value} />
     </div>
   );

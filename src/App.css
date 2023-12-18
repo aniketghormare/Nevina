@@ -7,15 +7,16 @@
   display:flex;
   justify-content:space-between;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
-
+font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 .mainconteiner{
-  height:100vh;
+  height:auto;
   width:100%;
 
   border:1px solid white;
   display:flex;
   justify-content:space-between;
+  
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
@@ -23,12 +24,12 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+/* 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -45,17 +46,17 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .sidebar{
-  height:100%;
+  height:auto;
   width:17%;
   border:1px solid white;
   border-radius: 0px 10px 10px 0px;
@@ -65,7 +66,8 @@
 .container{
   height:100%;
   width:80%;
-  border:1px solid whiteblue
+  border:1px solid whiteblue;
+  padding:20px;
 
 }
 .uppernav{
@@ -122,19 +124,22 @@ input{
   height:100%
 }
 .calander{
+  height:100%;
   width:25%;
   border:1px solid white;
   height:100%;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding:10px;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
 }
 .event{
-  display:flex
+  display:flex;
+  justify-content:space-between
 }
 
 /* App.css */
 
 /* Add responsive styles */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .container {
     flex-direction: column;
   }
@@ -144,28 +149,68 @@ input{
   }
 
   /* Add more responsive styles as needed */
-}
+/* } */
 
 /* Your existing styles */
 /* ... */
-@media (max-width: 480px) {
+ /* @media (max-width: 480px) {
   .sidebar {
-    display: none; /* Hide the sidebar on smaller screens */
+    display: none; 
   }
 
   .calanderdiv {
-    flex-direction: column; /* Stack calendar on top of events for better mobile view */
+    flex-direction: column; 
   }
 
   .event-container {
-    flex-direction: column; /* Stack events on top of each other for better mobile view */
+    flex-direction: column;
   }
 
   .button-container {
-    flex-direction: column; /* Stack buttons on top of each other for better mobile view */
+    flex-direction: column;
   }
 
-  /* Add more responsive styles as needed */
+   Add more responsive styles as needed 
+} */
+.buttondiv{
+  border:1px solid white;
+  display:flex;
+  justify-content:space-evenly;
+  padding:7px
 }
+.buttondiv *{
+  padding:12px;
+  border-radius:12px;
+  background-color:#edbf1c;
+  color:white;
+  border-color:#edbf1c
+}
+button:hover{
+   font-size:large
+}
+@media only screen and (max-width: 1072px) {
+  .calanderdiv{
+    flex-direction:column
+  }
+  .screen{
+    width:100%
+  }
+  .calander{
+    display:flex;
+    width:100%
+  }
+  .musicdiv{
 
+    border:1px solid white;
+     padding:20px;
+     width:50%
+  }
+  .buttondiv{
+    border:1px solid white;
+    display:flex;
+    justify-content:space-evenly
+  }
+
+ 
+}
 
